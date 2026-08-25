@@ -1,0 +1,140 @@
+{
+  "project_name": "INSIDE YOUR COMPUTER",
+  "app_type": "3d_experience / immersive scroll storytelling site",
+  "theme": "Dark Futuristic Premium Sci-Fi Hardware Museum",
+  "meta": {
+    "target_fps": 60,
+    "scrollytelling": "Lenis momentum scroll + Framer Motion + Three.js Canvas particles",
+    "sound_engine": "Synthesized Web Audio API ambient drone + micro UI click ticks (muted by default with toggle)"
+  },
+  "color_palette": {
+    "background_main": "#050508",
+    "background_card": "#0C0E12",
+    "background_card_hover": "#131720",
+    "surface_glass": "rgba(12, 14, 18, 0.75)",
+    "border_glass": "rgba(255, 255, 255, 0.08)",
+    "border_glow": "rgba(0, 240, 255, 0.3)",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "accent_cyan": "#00F0FF",
+    "accent_amber": "#FF9D00",
+    "accent_green": "#00FF66",
+    "accent_crimson": "#FF2A55",
+    "accent_violet": "#8B5CF6"
+  },
+  "typography": {
+    "display_font": "Unbounded, sans-serif",
+    "heading_font": "Chivo, sans-serif",
+    "body_font": "DM Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "card_h3": "text-lg sm:text-xl font-semibold tracking-wide",
+      "body_text": "text-sm sm:text-base leading-relaxed text-secondary",
+      "mono_label": "text-xs font-mono uppercase tracking-[0.2em] text-cyan"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-24 sm:py-32",
+    "grid_gap": "gap-6 sm:gap-8",
+    "glass_card_style": "bg-[#0C0E12]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-[#00F0FF]/40 transition-all duration-300 shadow-[0_8px_32px_rgba(0,0,0,0.5)]"
+  },
+  "section_blueprint": [
+    {
+      "section_id": "hero",
+      "title": "You click. A billion things happen.",
+      "description": "Cinematic hero featuring kinetic title reveal, Three.js particle field, interactive wireframe processor, mouse parallax, and 'ENTER THE MACHINE' CTA with camera zoom transition.",
+      "key_interactions": ["Mouse parallax", "3D rotating CPU die wireframe", "Enter the Machine fly-through CTA", "Sound mute/unmute toggle"]
+    },
+    {
+      "section_id": "first-click",
+      "title": "01 / THE FIRST CLICK",
+      "description": "Micro-switch actuation: Voltage drops from 3.3V to 0V, sending an electrical interrupt request (IRQ) down the copper traces in sub-nanoseconds.",
+      "key_interactions": ["Clickable mechanical mouse switch simulation", "Oscilloscope voltage drop signal animation", "Sub-nanosecond timer breakdown"]
+    },
+    {
+      "section_id": "motherboard-map",
+      "title": "02 / INSIDE THE MACHINE",
+      "description": "Interactive hardware architecture map showcasing CPU, RAM, GPU, SSD, PSU, Cooling & Network with glowing hover pins and expandable modal fact panels.",
+      "key_interactions": ["Hover component glow highlights", "Click to inspect component spec panel", "Data packet flow visualization along PCIe lanes"]
+    },
+    {
+      "section_id": "cpu-engine",
+      "title": "03 / CPU CORE ENGINE",
+      "description": "The Silicon Brain: Cores, Threads, L1/L2/L3 Cache latency races, and the Arithmetic Logic Unit (ALU) processing clock pulse cycles.",
+      "key_interactions": ["Interactive ALU calculation trigger", "Fetch-Decode-Execute cycle speed slider", "Cache hit vs cache miss latency race visualizer"]
+    },
+    {
+      "section_id": "ram-memory",
+      "title": "04 / RAM DYNAMIC MEMORY",
+      "description": "Volatile Memory Grid: Transistors and capacitors holding binary charges at 6400 MT/s. Allocate and free app memory cells in real time.",
+      "key_interactions": ["App Memory Allocator (Chrome, Cyberpunk 2077, VS Code, Photoshop)", "Real-time RAM cell fill gauge", "Clear RAM Garbage Collector button"]
+    },
+    {
+      "section_id": "ssd-storage",
+      "title": "05 / SSD NAND FLASH",
+      "description": "Persistent Quantum Tunneling: Floating gate transistors storing data blocks. Breakdown of Storage vs Memory differences.",
+      "key_interactions": ["File fragmentation reader simulation", "Memory vs Storage interactive comparison matrix", "Read/Write speed benchmark comparison"]
+    },
+    {
+      "section_id": "gpu-pipeline",
+      "title": "06 / GPU RENDER MATRIX",
+      "description": "From Math to Photons: Millions of parallel cores translating 3D geometry matrix transforms into shader pixels on screen.",
+      "key_interactions": ["Wireframe to Pixel shader interactive toggle", "FPS vs Resolution load simulator", "Canvas pixel particle explosion"]
+    },
+    {
+      "section_id": "internet-network",
+      "title": "07 / GLOBAL NETWORK & INTERNET",
+      "description": "Beyond the Case: Fiber-optic cables, DNS lookup, TCP/IP 3-way handshake, and HTTP GET request traveling across continental undersea cables in 40ms.",
+      "key_interactions": ["Interactive Ping request simulator", "Packet inspector tool with custom headers", "Subsea cable global map animation"]
+    },
+    {
+      "section_id": "what-if",
+      "title": "08 / WHAT IF? SCENARIO LAB",
+      "description": "Stress-test the system: What happens when RAM fills up? CPU thermal throttles at 100°C? SSD degrades? Internet drops packets?",
+      "key_interactions": ["RAM Bottleneck Swap File Lag toggle", "Thermal Throttling Fan Simulator", "Packet Loss Glitch Simulator"]
+    },
+    {
+      "section_id": "final-screen",
+      "title": "09 / THE DISPLAY OUTPUT",
+      "description": "And all of that happened because you clicked. 0.000000001 seconds after your finger pressed down, a single pixel changed color.",
+      "key_interactions": ["Macro Lens Sub-Pixel RGB Array inspection", "Operation Counter timeline breakdown"]
+    },
+    {
+      "section_id": "finale-footer",
+      "title": "10 / ONE CLICK. BILLIONS OF OPERATIONS.",
+      "description": "Epic conclusion with Re-enter Experience CTA, Konami easter egg guide, and Creator Portfolio link.",
+      "key_interactions": ["Re-Enter Machine restart button", "Developer Portfolio Link (https://portofolio-m.vercel.app/)", "Konami HUD activator button"]
+    }
+  ],
+  "easter_eggs": {
+    "konami_code": "Press ↑ ↑ ↓ ↓ ← → ← → B A to unlock Cyberpunk Dev HUD with live FPS, memory usage & packet stream",
+    "multi_click_cpu": "Rapidly click the CPU core 10 times to trigger Overclock Mode with flame particles",
+    "hidden_terminal": "Toggle Terminal with `Ctrl + ~` or HUD button to run commands like `help`, `cpu-info`, `ping-matrix`, `overclock`",
+    "funny_packets": "Data packets labeled with easter egg messages like 'HTTP 418 I'm a teapot', 'Cat GIF Packet #42069', 'User Click Interrupt'"
+  },
+  "media_assets": {
+    "motherboard_bg": "https://images.unsplash.com/photo-1782330300444-4acba20c673e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxjb21wdXRlciUyMG1pY3JvY2hpcCUyMHByb2Nlc3NvciUyMGNpcmN1aXQlMjBib2FyZCUyMG5lb24lMjBnbG93aW5nfGVufDB8fHx8MTc4NzY4NTk3MHww&ixlib=rb-4.1.0&q=85",
+    "circuit_traces": "https://images.unsplash.com/photo-1782330389364-889dca412416?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMG1pY3JvY2hpcCUyMHByb2Nlc3NvciUyMGNpcmN1aXQlMjBib2FyZCUyMG5lb24lMjBnbG93aW5nfGVufDB8fHx8MTc4NzY4NTk3MHww&ixlib=rb-4.1.0&q=85",
+    "cpu_chip_close": "https://images.pexels.com/photos/37005283/pexels-photo-37005283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "component_guidelines": {
+    "buttons": "Pill or sharp chamfered geometry with glowing border hover effect, backdrop blur, mono label, and active scale transition",
+    "cards": "Dark obsidian glassmorphism with subtle 1px border, high-contrast typography, and cyan/amber glow accents on hover",
+    "hud_elements": "Monospace high-density data readouts, status badges with glowing pulse indicators, and crisp technical lines",
+    "testing_attributes": "All interactive buttons, inputs, sliders, cards, modals, and toggles MUST include data-testid attributes in kebab-case format."
+  },
+  "instructions_to_main_agent": [
+    "Load Google Fonts 'Unbounded', 'Chivo', 'DM Sans', and 'JetBrains Mono' into index.html.",
+    "Implement Lenis smooth scrolling engine for buttery momentum scroll storytelling.",
+    "Build lightweight Three.js background canvas particle field and wireframe 3D CPU die in hero.",
+    "Create rich interactive Canvas simulations for RAM allocation, GPU pixel shader, and network packet routes.",
+    "Include a Web Audio API synthesized sci-fi sound engine with a prominent top-right Mute/Unmute audio toggle.",
+    "Add Konami code listener and Terminal overlay easter eggs.",
+    "Provide a creative footer link pointing to https://portofolio-m.vercel.app/.",
+    "Add data-testid to every interactive button, slider, tab, modal, and card."
+  ]
+}
